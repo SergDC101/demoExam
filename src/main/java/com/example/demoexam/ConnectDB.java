@@ -26,6 +26,11 @@ public class ConnectDB {
         ResultSet resultSet = null;
         String select = "SELECT * FROM examtest.wokers where login = ? and password = ?";
 
+
+
+
+
+
         PreparedStatement preparedStatement = getConnect().prepareStatement(select);
         preparedStatement.setString(1, login);
         preparedStatement.setString(2,password);
